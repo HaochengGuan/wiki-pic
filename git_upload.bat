@@ -9,7 +9,9 @@ if %errorlevel% neq 0 (
 )
 
 rem 添加所有更改的文件到暂存区
-git add.
+git add .
+
+set COMMIT_MESSAGE="update"
 
 rem 检查是否有文件被修改或添加
 for /f "delims=" %%i in ('git status --porcelain') do set CHANGES=%%i
