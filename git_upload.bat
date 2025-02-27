@@ -38,3 +38,6 @@ if %errorlevel% equ 0 (
 ) else (
     echo 推送代码到远程仓库时出错。
 )
+
+rem 暂停窗口，等待用户按键
+pause
